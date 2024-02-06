@@ -1,6 +1,6 @@
 fileVersion: 1
-id: 99ba8ac3-8f3b-4766-b205-80f01ac90d17
-name: STG_ORDERS1
+id: 14c6cb7a-a7c2-46df-9341-1e046e8e041e
+name: STG_ORDERS
 operation:
   config:
     insertStrategy: INSERT
@@ -22,8 +22,8 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 3907209f-c305-4a14-9533-69ce20cd92c0
-          stepCounter: 99ba8ac3-8f3b-4766-b205-80f01ac90d17
+          columnCounter: aa0abf5f-7fa0-47db-8f57-6e9abcad0893
+          stepCounter: 14c6cb7a-a7c2-46df-9341-1e046e8e041e
         config: {}
         dataType: NUMBER(38,0)
         description: SF*1,500,000 are sparsely populated
@@ -36,8 +36,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f37087c7-5381-4c6e-99ef-99248eb92803
-          stepCounter: 99ba8ac3-8f3b-4766-b205-80f01ac90d17
+          columnCounter: 4b6bc87c-01df-40aa-b6b1-b64fd7496a49
+          stepCounter: 14c6cb7a-a7c2-46df-9341-1e046e8e041e
         config: {}
         dataType: NUMBER(38,0)
         description: Foreign Key to C_CUSTKEY
@@ -50,8 +50,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 704d8621-ca0c-4797-8573-99b1e8e8b162
-          stepCounter: 99ba8ac3-8f3b-4766-b205-80f01ac90d17
+          columnCounter: 110607d6-47d2-4e06-a0bc-6befdd400e96
+          stepCounter: 14c6cb7a-a7c2-46df-9341-1e046e8e041e
         config: {}
         dataType: VARCHAR(1)
         description: ""
@@ -64,8 +64,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: ed885d8d-7345-4a1d-b56f-1534f8ae06eb
-          stepCounter: 99ba8ac3-8f3b-4766-b205-80f01ac90d17
+          columnCounter: 73d8441f-56a7-440c-8444-c9fe0f403325
+          stepCounter: 14c6cb7a-a7c2-46df-9341-1e046e8e041e
         config: {}
         dataType: NUMBER(12,2)
         description: ""
@@ -78,8 +78,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: dc930db2-a1b6-4b11-9eb2-d195bf58017e
-          stepCounter: 99ba8ac3-8f3b-4766-b205-80f01ac90d17
+          columnCounter: dde8611b-753a-414e-bece-69ca7686574c
+          stepCounter: 14c6cb7a-a7c2-46df-9341-1e046e8e041e
         config: {}
         dataType: DATE
         description: ""
@@ -92,8 +92,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 09c6cc85-eadd-452d-96b2-e7a9df7d6925
-          stepCounter: 99ba8ac3-8f3b-4766-b205-80f01ac90d17
+          columnCounter: d0d36aea-b21d-4924-af0d-5a4cbaa3ce1e
+          stepCounter: 14c6cb7a-a7c2-46df-9341-1e046e8e041e
         config: {}
         dataType: VARCHAR(15)
         description: ""
@@ -106,8 +106,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: d2b4804c-7935-4022-94f1-b0f8d5c3fe58
-          stepCounter: 99ba8ac3-8f3b-4766-b205-80f01ac90d17
+          columnCounter: c18f6150-677f-43a9-bd3f-eed78c72a2a3
+          stepCounter: 14c6cb7a-a7c2-46df-9341-1e046e8e041e
         config: {}
         dataType: VARCHAR(15)
         description: ""
@@ -120,8 +120,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 883dd250-720e-4b6f-9ae3-822cf42b1b2d
-          stepCounter: 99ba8ac3-8f3b-4766-b205-80f01ac90d17
+          columnCounter: 59b04792-8498-4893-97af-cdf90c437cb3
+          stepCounter: 14c6cb7a-a7c2-46df-9341-1e046e8e041e
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -134,8 +134,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 150b4d33-28b6-4cc8-b343-4bbf5c97aecb
-          stepCounter: 99ba8ac3-8f3b-4766-b205-80f01ac90d17
+          columnCounter: a65990cc-e178-42cc-85f0-4620e691ecfe
+          stepCounter: 14c6cb7a-a7c2-46df-9341-1e046e8e041e
         config: {}
         dataType: VARCHAR(79)
         description: ""
@@ -157,9 +157,9 @@ operation:
             nodeName: ORDERS
         join:
           joinCondition: FROM {{ ref('SAMPLE', 'ORDERS') }} "ORDERS"
-        name: STG_ORDERS1
+        name: STG_ORDERS
         noLinkRefs: []
-  name: STG_ORDERS1
+  name: STG_ORDERS
   overrideSQL: false
   schema: ""
   sqlType: Stage
