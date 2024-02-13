@@ -12,6 +12,7 @@ metadata:
 
     config:
     - groupName: Options
+      enableIf: "false"
       items:
       - type: materializationSelector
         default: table
@@ -25,6 +26,7 @@ metadata:
 
       - type: overrideSQLToggle
         enableIf: "{% if node.materializationType == 'view' %} true {% else %} false {% endif %}"
+        
         
       - displayName: Multi Source Strategy
         attributeName: insertStrategy
@@ -52,11 +54,17 @@ metadata:
         type: textBox
         syntax: sql
         isRequired: false
+        enableIf: "true"
 
       - displayName: Post-SQL
         attributeName: postSQL
         type: textBox
         syntax: sql
         isRequired: false
+
+
+
+
+      
 name: Copy of Stage
 type: NodeType

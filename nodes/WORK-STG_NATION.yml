@@ -11,7 +11,7 @@ operation:
   database: ""
   deployEnabled: true
   description: ""
-  isMultisource: false
+  isMultisource: true
   locationName: WORK
   materializationType: table
   metadata:
@@ -31,6 +31,12 @@ operation:
               - columnCounter: 5fb6624d-691c-461f-bfb1-ffb329d7bfd9
                 stepCounter: 8a1d71b1-fec9-43a1-85d3-6c1d8dd30fa4
             transform: ""
+          - columnReferences:
+              - columnCounter: 5fb6624d-691c-461f-bfb1-ffb329d7bfd9
+                stepCounter: 8a1d71b1-fec9-43a1-85d3-6c1d8dd30fa4
+            transform: ""
+          - columnReferences: []
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: fa82bf27-41e4-477d-96d7-6ed3bedc1452
@@ -44,6 +50,12 @@ operation:
           - columnReferences:
               - columnCounter: 87099c0f-a463-4dec-b8e9-3aee3c114de8
                 stepCounter: 8a1d71b1-fec9-43a1-85d3-6c1d8dd30fa4
+            transform: ""
+          - columnReferences:
+              - columnCounter: 87099c0f-a463-4dec-b8e9-3aee3c114de8
+                stepCounter: 8a1d71b1-fec9-43a1-85d3-6c1d8dd30fa4
+            transform: ""
+          - columnReferences: []
             transform: ""
       - appliedColumnTests: {}
         columnReference:
@@ -59,6 +71,12 @@ operation:
               - columnCounter: 06169591-f54c-4106-ac13-fe86a2410b69
                 stepCounter: 8a1d71b1-fec9-43a1-85d3-6c1d8dd30fa4
             transform: ""
+          - columnReferences:
+              - columnCounter: 06169591-f54c-4106-ac13-fe86a2410b69
+                stepCounter: 8a1d71b1-fec9-43a1-85d3-6c1d8dd30fa4
+            transform: ""
+          - columnReferences: []
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 3eb708f6-84d3-427a-ae60-9e7ed1f304a9
@@ -73,7 +91,12 @@ operation:
               - columnCounter: e9c5a59b-39dd-4a3e-945f-eb12145b0035
                 stepCounter: 8a1d71b1-fec9-43a1-85d3-6c1d8dd30fa4
             transform: ""
-    cteString: ""
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+          - columnReferences: []
+            transform: ""
     enabledColumnTestIDs: []
     sourceMapping:
       - aliases: {}
@@ -85,6 +108,22 @@ operation:
         join:
           joinCondition: FROM {{ ref('SAMPLE', 'NATION') }} "NATION"
         name: STG_NATION
+        noLinkRefs: []
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: ""
+        name: NEW_SOURCE
+        noLinkRefs: []
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: ""
+        name: NEW_SOURCE
         noLinkRefs: []
   name: STG_NATION
   overrideSQL: false
