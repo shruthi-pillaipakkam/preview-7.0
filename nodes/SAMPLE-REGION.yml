@@ -2,7 +2,7 @@ fileVersion: 1
 id: 866d0571-9a4c-4eff-bba7-c25d076ac45f
 name: REGION
 operation:
-  database: ""
+  database: COALESCE_SAMPLE_DATABASE
   dataset: ""
   deployEnabled: true
   description: ""
@@ -57,7 +57,7 @@ operation:
     join:
       joinCondition: FROM {{ ref('SAMPLE', 'REGION') }}
   name: REGION
-  schema: ""
+  schema: TPCH_SF001
   sqlType: Source
   table: REGION
   type: sourceInput

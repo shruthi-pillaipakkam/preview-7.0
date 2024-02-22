@@ -2,7 +2,7 @@ fileVersion: 1
 id: fbb711b6-6061-46d3-a935-96c147a47ad9
 name: CUSTOMER
 operation:
-  database: ""
+  database: COALESCE_SAMPLE_DATABASE
   dataset: ""
   deployEnabled: true
   description: ""
@@ -132,7 +132,7 @@ operation:
     join:
       joinCondition: FROM {{ ref('SAMPLE', 'CUSTOMER') }}
   name: CUSTOMER
-  schema: ""
+  schema: TPCH_SF001
   sqlType: Source
   table: CUSTOMER
   type: sourceInput

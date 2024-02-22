@@ -2,7 +2,7 @@ fileVersion: 1
 id: d9066bc4-a05e-4d30-b93f-8afaa1cf04ee
 name: DAILY_14_TOTAL_SHORT
 operation:
-  database: ""
+  database: COALESCE_SAMPLE_DATABASE
   dataset: ""
   deployEnabled: true
   description: ""
@@ -42,7 +42,7 @@ operation:
     join:
       joinCondition: FROM {{ ref('SAMPLE', 'DAILY_14_TOTAL_SHORT') }}
   name: DAILY_14_TOTAL_SHORT
-  schema: ""
+  schema: TPCH_SF001
   sqlType: Source
   table: DAILY_14_TOTAL_SHORT
   type: sourceInput

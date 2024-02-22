@@ -2,7 +2,7 @@ fileVersion: 1
 id: 8a1d71b1-fec9-43a1-85d3-6c1d8dd30fa4
 name: NATION
 operation:
-  database: ""
+  database: COALESCE_SAMPLE_DATABASE
   dataset: ""
   deployEnabled: true
   description: ""
@@ -72,7 +72,7 @@ operation:
     join:
       joinCondition: FROM {{ ref('SAMPLE', 'NATION') }}
   name: NATION
-  schema: ""
+  schema: TPCH_SF001
   sqlType: Source
   table: NATION
   type: sourceInput

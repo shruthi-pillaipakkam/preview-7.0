@@ -8,7 +8,7 @@ operation:
     preSQL: ""
     testsEnabled: true
     truncateBefore: true
-  database: ""
+  database: SHRUTHI_PREVIEW_EDW
   deployEnabled: true
   description: |-
     Orders are not present for all customers. In fact, one-third of the customers do not have any order in
@@ -75,7 +75,7 @@ operation:
           - columnReferences:
               - columnCounter: 856072a4-494c-49d5-b748-5b466b48771e
                 stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
-            transform: ""
+            transform: "1"
       - appliedColumnTests: {}
         columnReference:
           columnCounter: bc559552-bbed-4620-9f71-609f0ff954d1
@@ -117,7 +117,7 @@ operation:
           - columnReferences:
               - columnCounter: 215e99bb-60ef-4611-8f67-c8608ff82148
                 stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
-            transform: ""
+            transform: "1"
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e9ad06cc-9b86-4751-8548-6958bf177f15
@@ -184,7 +184,7 @@ operation:
         noLinkRefs: []
   name: STG_ORDERS
   overrideSQL: false
-  schema: ""
+  schema: PUBLIC
   sqlType: Stage
   type: sql
   version: 1

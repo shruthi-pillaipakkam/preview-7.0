@@ -2,10 +2,10 @@ fileVersion: 1
 id: 5ac6b040-ebe8-4975-88af-f352e9700403
 name: PART
 operation:
-  database: ""
+  database: COALESCE_SAMPLE_DATABASE
   dataset: ""
   deployEnabled: true
-  description: "test"
+  description: test
   locationName: SAMPLE
   metadata:
     columns:
@@ -147,7 +147,7 @@ operation:
     join:
       joinCondition: FROM {{ ref('SAMPLE', 'PART') }}
   name: PART
-  schema: ""
+  schema: TPCH_SF001
   sqlType: Source
   table: PART
   type: sourceInput

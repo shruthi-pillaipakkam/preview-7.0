@@ -2,7 +2,7 @@ fileVersion: 1
 id: d0d2802d-d20f-4d86-b7df-6084da0c5364
 name: SUPPLIER
 operation:
-  database: ""
+  database: COALESCE_SAMPLE_DATABASE
   dataset: ""
   deployEnabled: true
   description: ""
@@ -117,7 +117,7 @@ operation:
     join:
       joinCondition: FROM {{ ref('SAMPLE', 'SUPPLIER') }}
   name: SUPPLIER
-  schema: ""
+  schema: TPCH_SF001
   sqlType: Source
   table: SUPPLIER
   type: sourceInput
