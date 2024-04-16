@@ -1,8 +1,8 @@
 fileVersion: 1
-id: 99ab162e-25d6-49b2-90b8-804d18ac5880
+id: 95f28b13-202d-44a9-9591-f849edb8c71b
 name: PARTSUPP
 operation:
-  database: ""
+  database: COALESCE_SAMPLE_DATABASE
   dataset: ""
   deployEnabled: true
   description: ""
@@ -14,8 +14,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 09fbfa7f-032b-4889-810b-21f6082dec49
-          stepCounter: 99ab162e-25d6-49b2-90b8-804d18ac5880
+          columnCounter: 5a6fd1f1-531c-4e6a-a8d9-53830bab476c
+          stepCounter: 95f28b13-202d-44a9-9591-f849edb8c71b
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
@@ -29,8 +29,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: dbcd69b3-a8b7-458d-9a8b-3042af609de3
-          stepCounter: 99ab162e-25d6-49b2-90b8-804d18ac5880
+          columnCounter: ffad79a8-e3e0-4eb4-8ba3-dd4c38d8b3d1
+          stepCounter: 95f28b13-202d-44a9-9591-f849edb8c71b
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
@@ -44,8 +44,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 176c65d8-a117-4a88-8329-416c616254b4
-          stepCounter: 99ab162e-25d6-49b2-90b8-804d18ac5880
+          columnCounter: 6ef9af17-70fb-4b81-8422-4ed0e4356e01
+          stepCounter: 95f28b13-202d-44a9-9591-f849edb8c71b
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
@@ -59,8 +59,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: d2841207-6f06-493f-bd64-584424c5a1d2
-          stepCounter: 99ab162e-25d6-49b2-90b8-804d18ac5880
+          columnCounter: cd795a5d-3f6d-4e35-b3e5-522f1093e5d7
+          stepCounter: 95f28b13-202d-44a9-9591-f849edb8c71b
         config: {}
         dataType: NUMBER(12,2)
         defaultValue: ""
@@ -74,8 +74,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: a5692a0e-224f-48e2-8c8f-3fb42e99e623
-          stepCounter: 99ab162e-25d6-49b2-90b8-804d18ac5880
+          columnCounter: ff397fac-a55f-4e2d-96dc-9d5388cda939
+          stepCounter: 95f28b13-202d-44a9-9591-f849edb8c71b
         config: {}
         dataType: VARCHAR(199)
         defaultValue: ""
@@ -87,7 +87,7 @@ operation:
     join:
       joinCondition: FROM {{ ref('SAMPLE', 'PARTSUPP') }}
   name: PARTSUPP
-  schema: ""
+  schema: TPCH_SF001
   sqlType: Source
   table: PARTSUPP
   type: sourceInput

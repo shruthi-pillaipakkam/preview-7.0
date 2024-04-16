@@ -1,8 +1,8 @@
 fileVersion: 1
-id: 866d0571-9a4c-4eff-bba7-c25d076ac45f
+id: c67976e1-34ad-41c5-bc29-135870921af4
 name: REGION
 operation:
-  database: ""
+  database: COALESCE_SAMPLE_DATABASE
   dataset: ""
   deployEnabled: true
   description: ""
@@ -14,8 +14,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 117f9980-e458-4d72-96ce-d69d0b5d14f6
-          stepCounter: 866d0571-9a4c-4eff-bba7-c25d076ac45f
+          columnCounter: cbc3f09a-c4e1-457d-8424-cd57d141d5fb
+          stepCounter: c67976e1-34ad-41c5-bc29-135870921af4
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
@@ -29,8 +29,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 36d0ccdc-02a3-440c-b749-a6f1afa98b21
-          stepCounter: 866d0571-9a4c-4eff-bba7-c25d076ac45f
+          columnCounter: d89b8400-d421-4ff1-803e-a43a7c514a8a
+          stepCounter: c67976e1-34ad-41c5-bc29-135870921af4
         config: {}
         dataType: VARCHAR(25)
         defaultValue: ""
@@ -44,8 +44,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 6f4d0a5c-e6e2-4770-ba56-a3606ab806e6
-          stepCounter: 866d0571-9a4c-4eff-bba7-c25d076ac45f
+          columnCounter: efe1b71f-37f8-45e7-9952-2f8085651fbc
+          stepCounter: c67976e1-34ad-41c5-bc29-135870921af4
         config: {}
         dataType: VARCHAR(152)
         defaultValue: ""
@@ -57,7 +57,7 @@ operation:
     join:
       joinCondition: FROM {{ ref('SAMPLE', 'REGION') }}
   name: REGION
-  schema: ""
+  schema: TPCH_SF001
   sqlType: Source
   table: REGION
   type: sourceInput

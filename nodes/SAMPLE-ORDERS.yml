@@ -1,8 +1,8 @@
 fileVersion: 1
-id: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+id: ef6ac5a5-766c-44e2-a260-39d8724a2f9b
 name: ORDERS
 operation:
-  database: ""
+  database: COALESCE_SAMPLE_DATABASE
   dataset: ""
   deployEnabled: true
   description: |-
@@ -17,8 +17,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 43b61504-1b40-47de-b351-d40a34497f5a
-          stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+          columnCounter: 2e76ce5c-88c5-4a07-90c3-1ee9800e38ef
+          stepCounter: ef6ac5a5-766c-44e2-a260-39d8724a2f9b
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
@@ -32,8 +32,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: a33df900-94e1-4f2d-a6ad-985ee2ec0c1f
-          stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+          columnCounter: 63406c7d-9d65-44ec-b2af-03818a29f0d0
+          stepCounter: ef6ac5a5-766c-44e2-a260-39d8724a2f9b
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
@@ -47,8 +47,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 01e11e01-d785-448f-bd86-4f1aa80cb03b
-          stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+          columnCounter: e628d1f2-d259-478a-a561-67b8528335da
+          stepCounter: ef6ac5a5-766c-44e2-a260-39d8724a2f9b
         config: {}
         dataType: VARCHAR(1)
         defaultValue: ""
@@ -62,8 +62,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 856072a4-494c-49d5-b748-5b466b48771e
-          stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+          columnCounter: cecc9783-53a9-408e-85ed-09ab017baeee
+          stepCounter: ef6ac5a5-766c-44e2-a260-39d8724a2f9b
         config: {}
         dataType: NUMBER(12,2)
         defaultValue: ""
@@ -77,8 +77,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 9d0345f9-09cf-4053-b41f-2085023abd04
-          stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+          columnCounter: 5eae0fcc-ed58-407f-84f7-d02550ee9c7c
+          stepCounter: ef6ac5a5-766c-44e2-a260-39d8724a2f9b
         config: {}
         dataType: DATE
         defaultValue: ""
@@ -92,8 +92,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 73f29153-c2ac-4285-ab83-94c05a9f21d0
-          stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+          columnCounter: df2b41d5-ed98-4576-9597-464555f1fd3c
+          stepCounter: ef6ac5a5-766c-44e2-a260-39d8724a2f9b
         config: {}
         dataType: VARCHAR(15)
         defaultValue: ""
@@ -107,8 +107,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 215e99bb-60ef-4611-8f67-c8608ff82148
-          stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+          columnCounter: e7ec7d40-681d-4d79-af85-4b6af2b56e9e
+          stepCounter: ef6ac5a5-766c-44e2-a260-39d8724a2f9b
         config: {}
         dataType: VARCHAR(15)
         defaultValue: ""
@@ -122,8 +122,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: d99f68fd-1168-4655-b275-d75098c5ffac
-          stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+          columnCounter: 4eb414f2-e3ae-4a30-ad07-7585a63c36cd
+          stepCounter: ef6ac5a5-766c-44e2-a260-39d8724a2f9b
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
@@ -137,8 +137,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 4ad4e895-1e2e-4a93-a854-46cd8a0d3e5d
-          stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+          columnCounter: f722ec37-8b6d-44be-a802-f49d9e36fc38
+          stepCounter: ef6ac5a5-766c-44e2-a260-39d8724a2f9b
         config: {}
         dataType: VARCHAR(79)
         defaultValue: ""
@@ -150,7 +150,7 @@ operation:
     join:
       joinCondition: FROM {{ ref('SAMPLE', 'ORDERS') }}
   name: ORDERS
-  schema: ""
+  schema: TPCH_SF001
   sqlType: Source
   table: ORDERS
   type: sourceInput

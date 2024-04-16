@@ -1,8 +1,8 @@
 fileVersion: 1
-id: d9066bc4-a05e-4d30-b93f-8afaa1cf04ee
+id: c32a4b37-8e97-4381-9f3e-b069174f446e
 name: DAILY_14_TOTAL_SHORT
 operation:
-  database: ""
+  database: COALESCE_SAMPLE_DATABASE
   dataset: ""
   deployEnabled: true
   description: ""
@@ -14,8 +14,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 71ca0091-3c87-4a25-91d7-cb877296a92a
-          stepCounter: d9066bc4-a05e-4d30-b93f-8afaa1cf04ee
+          columnCounter: 5c624c73-ace7-46e3-9f07-7ebfde5660c3
+          stepCounter: c32a4b37-8e97-4381-9f3e-b069174f446e
         config: {}
         dataType: VARIANT
         defaultValue: ""
@@ -29,8 +29,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 86be93ad-21fb-42da-9e08-fba55bee7647
-          stepCounter: d9066bc4-a05e-4d30-b93f-8afaa1cf04ee
+          columnCounter: 4b6652ca-27bb-425b-94c4-8774b5dbd24d
+          stepCounter: c32a4b37-8e97-4381-9f3e-b069174f446e
         config: {}
         dataType: TIMESTAMP_NTZ(9)
         defaultValue: ""
@@ -42,7 +42,7 @@ operation:
     join:
       joinCondition: FROM {{ ref('SAMPLE', 'DAILY_14_TOTAL_SHORT') }}
   name: DAILY_14_TOTAL_SHORT
-  schema: ""
+  schema: TPCH_SF001
   sqlType: Source
   table: DAILY_14_TOTAL_SHORT
   type: sourceInput
