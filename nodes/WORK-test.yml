@@ -1,6 +1,6 @@
 fileVersion: 1
-id: 7aa8437e-0722-41d4-b4af-8ea34ea60caf
-name: STG_test
+id: 63486398-476e-48f0-8b17-a9530d974933
+name: test
 operation:
   config:
     insertStrategy: INSERT
@@ -17,34 +17,39 @@ operation:
   metadata:
     appliedNodeTests: []
     columns:
-      - appliedColumnTests: {}
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
         columnReference:
-          columnCounter: ace11a2f-7308-48ac-8837-2d6ae96d199e
-          stepCounter: 7aa8437e-0722-41d4-b4af-8ea34ea60caf
+          columnCounter: 00ebb5b5-35f4-44a0-95b4-8448ec4a0aba
+          stepCounter: 63486398-476e-48f0-8b17-a9530d974933
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: ""
+        defaultValue: ""
         description: ""
+        keyColumnType: None
         name: C1
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: f40942aa-4468-450d-b443-230f5c9149b0
-                stepCounter: b7b3f835-b2f9-4ab5-8053-a84d3b27d610
+              - columnCounter: "0"
+                stepCounter: "0"
             transform: ""
+        systemColumnType: None
+        transform: ""
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
       - aliases: {}
         customSQL:
           customSQL: ""
-        dependencies:
-          - locationName: TEST_TABLE
-            nodeName: test
+        dependencies: []
         join:
-          joinCondition: FROM {{ ref('TEST_TABLE', 'test') }} "test"
-        name: STG_test
+          joinCondition: ""
+        name: test
         noLinkRefs: []
-  name: STG_test
+  name: test
   overrideSQL: false
   schema: ""
   sqlType: Stage
