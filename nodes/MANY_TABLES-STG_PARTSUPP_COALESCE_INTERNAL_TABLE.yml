@@ -1,0 +1,95 @@
+fileVersion: 1
+id: 52a5d21e-c626-4132-a3ff-33062b102e28
+name: STG_PARTSUPP_COALESCE_INTERNAL_TABLE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: MANY_TABLES
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bad7fc0c-1494-4ead-a173-0560d719adda
+          stepCounter: 52a5d21e-c626-4132-a3ff-33062b102e28
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: Foreign Key to P_PARTKEY
+        name: PS_PARTKEY
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3801fcba-5b55-4eab-b6ec-a2474a05f476
+          stepCounter: 52a5d21e-c626-4132-a3ff-33062b102e28
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: Foreign Key to S_SUPPKEY
+        name: PS_SUPPKEY
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0c39d6a3-27d4-4a4c-8bae-24713b5afe3a
+          stepCounter: 52a5d21e-c626-4132-a3ff-33062b102e28
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PS_AVAILQTY
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 593d7472-ee49-4d31-a4c1-cf4603596572
+          stepCounter: 52a5d21e-c626-4132-a3ff-33062b102e28
+        config: {}
+        dataType: NUMBER(12,2)
+        defaultValue: ""
+        description: ""
+        name: PS_SUPPLYCOST
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b94338a-0bf8-45eb-ab43-09308624166f
+          stepCounter: 52a5d21e-c626-4132-a3ff-33062b102e28
+        config: {}
+        dataType: VARCHAR(199)
+        defaultValue: ""
+        description: ""
+        name: PS_COMMENT
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('MANY_TABLES', 'STG_PARTSUPP_COALESCE_INTERNAL_TABLE') }}
+  name: STG_PARTSUPP_COALESCE_INTERNAL_TABLE
+  schema: ""
+  sqlType: Source
+  table: STG_PARTSUPP_COALESCE_INTERNAL_TABLE
+  type: sourceInput
+  version: 1
+type: Node

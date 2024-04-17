@@ -1,0 +1,35 @@
+fileVersion: 1
+id: b7b3f835-b2f9-4ab5-8053-a84d3b27d610
+name: test
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: TEST_TABLE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f40942aa-4468-450d-b443-230f5c9149b0
+          stepCounter: b7b3f835-b2f9-4ab5-8053-a84d3b27d610
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: C1
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('TEST_TABLE', 'test') }}
+  name: test
+  schema: ""
+  sqlType: Source
+  table: test
+  type: sourceInput
+  version: 1
+type: Node

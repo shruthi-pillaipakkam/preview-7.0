@@ -1,0 +1,95 @@
+fileVersion: 1
+id: c2ddf5f3-6c3c-4bc1-9dd1-32be3ef969b5
+name: STG_PARTSUPP
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: MANY_TABLES
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6537c0d-c226-43b6-a53f-9022ff825f82
+          stepCounter: c2ddf5f3-6c3c-4bc1-9dd1-32be3ef969b5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: Foreign Key to P_PARTKEY
+        name: PS_PARTKEY
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 95df7772-3c6c-4679-b29b-b3dccbbb05be
+          stepCounter: c2ddf5f3-6c3c-4bc1-9dd1-32be3ef969b5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: Foreign Key to S_SUPPKEY
+        name: PS_SUPPKEY
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 77ebd003-e280-4ce4-bd74-4f688158ddb5
+          stepCounter: c2ddf5f3-6c3c-4bc1-9dd1-32be3ef969b5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PS_AVAILQTY
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6ea11736-230e-49b6-a2e2-6ee681af307a
+          stepCounter: c2ddf5f3-6c3c-4bc1-9dd1-32be3ef969b5
+        config: {}
+        dataType: NUMBER(12,2)
+        defaultValue: ""
+        description: ""
+        name: PS_SUPPLYCOST
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8feeadff-7d04-4f52-9a96-0b22f54b81cc
+          stepCounter: c2ddf5f3-6c3c-4bc1-9dd1-32be3ef969b5
+        config: {}
+        dataType: VARCHAR(199)
+        defaultValue: ""
+        description: ""
+        name: PS_COMMENT
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('MANY_TABLES', 'STG_PARTSUPP') }}
+  name: STG_PARTSUPP
+  schema: ""
+  sqlType: Source
+  table: STG_PARTSUPP
+  type: sourceInput
+  version: 1
+type: Node
