@@ -1,0 +1,53 @@
+fileVersion: 1
+id: 7aa8437e-0722-41d4-b4af-8ea34ea60caf
+name: STG_test
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ace11a2f-7308-48ac-8837-2d6ae96d199e
+          stepCounter: 7aa8437e-0722-41d4-b4af-8ea34ea60caf
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: C1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f40942aa-4468-450d-b443-230f5c9149b0
+                stepCounter: b7b3f835-b2f9-4ab5-8053-a84d3b27d610
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TEST_TABLE
+            nodeName: test
+        join:
+          joinCondition: FROM {{ ref('TEST_TABLE', 'test') }} "test"
+        name: STG_test
+        noLinkRefs: []
+  name: STG_test
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
