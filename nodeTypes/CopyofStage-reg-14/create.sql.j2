@@ -3,7 +3,7 @@
 	{{ node.override.create.script }}
 
 {% elif node.materializationType == 'table' %}
-	{{ stage('test') }}
+	{{ stage('Create Stage Table') }}
 
 	CREATE OR REPLACE TABLE {{ ref_no_link(node.location.name, node.name) }}
 	(

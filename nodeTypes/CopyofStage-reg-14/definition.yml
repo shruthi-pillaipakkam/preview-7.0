@@ -1,0 +1,30 @@
+fileVersion: 1
+id: "14"
+isDisabled: false
+metadata:
+  defaultStorageLocation: null
+  error: null
+  nodeMetadataSpec: |
+    capitalized: New Type
+    short: NEW
+    tagColor: gray
+    plural: New Types
+    joinTemplate: >
+     {%- macro ref_raw(location_name, node_name) -%}
+         {%- raw -%}{{ ref('{% endraw %}{{- location_name }}{% raw %}', '{% endraw %}{{ node_name }}{% raw %}') }}{% endraw %}
+     {%- endmacro -%}
+     {%- macro ref_no_link_raw(location_name, node_name) -%}
+         {% raw %}{{ ref_no_link('{% endraw %}{{ location_name }}{% raw %}', '{% endraw %}{{ node_name }}{% raw %}') }}{% endraw %}
+     {%- endmacro -%}
+     {%- macro ref_link_raw(location_name, node_name) -%}
+         {% raw %}{{ ref_link('{% endraw %}{{ location_name }}{% raw %}', '{% endraw %}{{ node_name }}{% raw %}') }}{% endraw %}
+     {%- endmacro -%}
+     {%- for dep in sources[0].dependencies -%}
+       {%- if loop.first -%} FROM {% endif %}
+       {%- if not loop.first %} LEFT JOIN {% endif -%}
+       {{ ref_raw(dep.node.location.name, dep.node.name) }} "{{ dep.node.name }}"
+       {% if not loop.first %} ON "{{ sources[0].dependencies[loop.index0].node.name }}"./*COLUMN*/ = "{{ sources[0].dependencies[loop.index0 - 1].node.name }}"./*COLUMN*/ {%- endif %}
+     {% endfor -%}
+     WHERE 1=1
+name: Copy of Stage-reg
+type: NodeType
