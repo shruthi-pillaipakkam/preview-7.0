@@ -1,29 +1,26 @@
 fileVersion: 1
-id: 7a3619b6-e6fd-4ad3-abc0-455819d30764
-name: STG_ORDERS
+id: a2d94d8a-7252-44c1-8dfc-78b95b9f2140
+name: V_ORDERS
 operation:
   config:
-    insertStrategy: INSERT
-    postSQL: ""
-    preSQL: ""
-    testsEnabled: true
-    truncateBefore: true
-  database: SHRUTHI_DB
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
   deployEnabled: true
   description: |-
     Orders are not present for all customers. In fact, one-third of the customers do not have any order in
     the database. The orders are assigned at random to two-thirds of the customers (see Clause 4: ). The purpose of
     this is to exercise the capabilities of the DBMS to handle "dead data" when joining two or more tables.
   isMultisource: false
-  locationName: TEST
-  materializationType: table
+  locationName: TEST2
+  materializationType: view
   metadata:
     appliedNodeTests: []
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 8e280592-ae86-4dd9-a2ab-575ea7bd5ef3
-          stepCounter: 7a3619b6-e6fd-4ad3-abc0-455819d30764
+          columnCounter: 0ef4b0c7-a8b6-4490-9642-0fdb103ae59f
+          stepCounter: a2d94d8a-7252-44c1-8dfc-78b95b9f2140
         config: {}
         dataType: NUMBER(38,0)
         description: SF*1,500,000 are sparsely populated
@@ -31,13 +28,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 43b61504-1b40-47de-b351-d40a34497f5a
-                stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+              - columnCounter: 06f548be-750c-4095-bed0-e2d4252d2f42
+                stepCounter: afbf328e-e3f9-42a5-beb2-802f5c17257e
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: af06cd5d-a73d-47f9-8994-8423e76999db
-          stepCounter: 7a3619b6-e6fd-4ad3-abc0-455819d30764
+          columnCounter: 20fbd15e-0fa9-4726-8681-5339a56ee354
+          stepCounter: a2d94d8a-7252-44c1-8dfc-78b95b9f2140
         config: {}
         dataType: NUMBER(38,0)
         description: Foreign Key to C_CUSTKEY
@@ -45,13 +42,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: a33df900-94e1-4f2d-a6ad-985ee2ec0c1f
-                stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+              - columnCounter: bdf906f4-24d9-42ee-ba50-001780d7930d
+                stepCounter: afbf328e-e3f9-42a5-beb2-802f5c17257e
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 4c6313d1-3efe-43f5-a1f0-688dcc368c42
-          stepCounter: 7a3619b6-e6fd-4ad3-abc0-455819d30764
+          columnCounter: 16fdd996-e7c9-4e1e-815a-304d801bf25a
+          stepCounter: a2d94d8a-7252-44c1-8dfc-78b95b9f2140
         config: {}
         dataType: VARCHAR(1)
         description: ""
@@ -59,13 +56,13 @@ operation:
         nullable: false
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 01e11e01-d785-448f-bd86-4f1aa80cb03b
-                stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+              - columnCounter: b963f7ae-bbe0-4a31-8b71-63b5ef226f96
+                stepCounter: afbf328e-e3f9-42a5-beb2-802f5c17257e
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: ef8e38cd-a4ef-4974-a969-a5d3ee847bd6
-          stepCounter: 7a3619b6-e6fd-4ad3-abc0-455819d30764
+          columnCounter: 85a29701-7232-49a5-b53a-ee959efb42b6
+          stepCounter: a2d94d8a-7252-44c1-8dfc-78b95b9f2140
         config: {}
         dataType: NUMBER(12,2)
         description: ""
@@ -73,13 +70,13 @@ operation:
         nullable: false
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 856072a4-494c-49d5-b748-5b466b48771e
-                stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+              - columnCounter: 6a42d469-0ebc-46be-93a6-79fb074dbac8
+                stepCounter: afbf328e-e3f9-42a5-beb2-802f5c17257e
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 3ca2060d-1bad-4995-8104-64ad4953f236
-          stepCounter: 7a3619b6-e6fd-4ad3-abc0-455819d30764
+          columnCounter: 4e7b8a2d-c97a-4fe0-bbc2-c2b6c5194327
+          stepCounter: a2d94d8a-7252-44c1-8dfc-78b95b9f2140
         config: {}
         dataType: DATE
         description: ""
@@ -87,13 +84,13 @@ operation:
         nullable: false
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 9d0345f9-09cf-4053-b41f-2085023abd04
-                stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+              - columnCounter: b48c360e-7955-4dea-a25f-e3b31a875fb8
+                stepCounter: afbf328e-e3f9-42a5-beb2-802f5c17257e
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: a79d5698-908a-4683-a590-69ca4f39170a
-          stepCounter: 7a3619b6-e6fd-4ad3-abc0-455819d30764
+          columnCounter: 9c434e2d-5c4f-4405-a083-aa470467efa3
+          stepCounter: a2d94d8a-7252-44c1-8dfc-78b95b9f2140
         config: {}
         dataType: VARCHAR(15)
         description: ""
@@ -101,13 +98,13 @@ operation:
         nullable: false
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 73f29153-c2ac-4285-ab83-94c05a9f21d0
-                stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+              - columnCounter: 95dadf9b-3088-4130-9890-4853800e3c87
+                stepCounter: afbf328e-e3f9-42a5-beb2-802f5c17257e
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 0e740365-30d7-483f-bf36-79a8236bd6cc
-          stepCounter: 7a3619b6-e6fd-4ad3-abc0-455819d30764
+          columnCounter: 42590c57-99b9-46f2-9a04-d982f266c668
+          stepCounter: a2d94d8a-7252-44c1-8dfc-78b95b9f2140
         config: {}
         dataType: VARCHAR(15)
         description: ""
@@ -115,13 +112,13 @@ operation:
         nullable: false
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 215e99bb-60ef-4611-8f67-c8608ff82148
-                stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+              - columnCounter: 7235350a-278e-47a1-9717-9d2624e78bab
+                stepCounter: afbf328e-e3f9-42a5-beb2-802f5c17257e
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: a2c4adaf-1fe0-4bdb-ab45-7c0f40e32087
-          stepCounter: 7a3619b6-e6fd-4ad3-abc0-455819d30764
+          columnCounter: 43fcb1ff-dcd1-41d0-8959-7810d3b8f9af
+          stepCounter: a2d94d8a-7252-44c1-8dfc-78b95b9f2140
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -129,13 +126,13 @@ operation:
         nullable: false
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: d99f68fd-1168-4655-b275-d75098c5ffac
-                stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+              - columnCounter: 92437854-7114-4825-b24e-99f954022cdc
+                stepCounter: afbf328e-e3f9-42a5-beb2-802f5c17257e
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 7db3d0c7-4f64-4a14-b3ef-e45f2ea1a23c
-          stepCounter: 7a3619b6-e6fd-4ad3-abc0-455819d30764
+          columnCounter: 958f2510-611e-4cf7-8718-a177ea507900
+          stepCounter: a2d94d8a-7252-44c1-8dfc-78b95b9f2140
         config: {}
         dataType: VARCHAR(79)
         description: ""
@@ -143,8 +140,8 @@ operation:
         nullable: false
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 4ad4e895-1e2e-4a93-a854-46cd8a0d3e5d
-                stepCounter: 19304f5f-d699-41c8-aff0-aa47b4b58a07
+              - columnCounter: 4652eda5-fe4a-4d85-8365-6519ed6992ae
+                stepCounter: afbf328e-e3f9-42a5-beb2-802f5c17257e
             transform: ""
     cteString: ""
     enabledColumnTestIDs: []
@@ -153,16 +150,16 @@ operation:
         customSQL:
           customSQL: ""
         dependencies:
-          - locationName: SAMPLE
-            nodeName: ORDERS
+          - locationName: TEST
+            nodeName: STG_ORDERS
         join:
-          joinCondition: FROM {{ ref('SAMPLE', 'ORDERS') }} "ORDERS"
-        name: STG_ORDERS
+          joinCondition: FROM {{ ref('TEST', 'STG_ORDERS') }} "STG_ORDERS"
+        name: V_ORDERS
         noLinkRefs: []
-  name: STG_ORDERS
+  name: V_ORDERS
   overrideSQL: false
-  schema: PUBLIC
-  sqlType: Stage
+  schema: ""
+  sqlType: View
   type: sql
   version: 1
 type: Node
